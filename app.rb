@@ -39,7 +39,8 @@ class App < Sinatra::Base
         @operation = *
       elsif @operation == "%2D"
         @operation = -
-      elsif @operation == "%2F"
+      else 
+        @operation == "%2F"
         @operation = /
       end
       result = @number1.to_i @operation.to_i @number2.to_i
