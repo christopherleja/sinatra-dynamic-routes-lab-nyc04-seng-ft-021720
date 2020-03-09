@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @number = params[:number]
     answer = @number.to_i.times do puts @phrase
+    answer.concat
     end
-    "#{answer}".concat
   end
 end
