@@ -35,7 +35,9 @@ class App < Sinatra::Base
     @number2 = params[:number2]
       if @operation == "%2B"
         @operation = +
-      elsif @operation == ""
+      elsif @operation == "%2A"
+        @operation = *
+      elsif @operation == 
       "#{@number1}.to_i #{@operation} #{@number2}.to_i"
   end
 end
