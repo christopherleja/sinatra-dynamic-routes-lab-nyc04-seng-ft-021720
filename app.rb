@@ -44,5 +44,5 @@ class App < Sinatra::Base
       end
       result = @number1.to_i @operation @number2.to_i
       "#{result}"
-  end
+    end
 end
