@@ -7,7 +7,7 @@ class App < Sinatra::Base
     "#{@name}".reverse
   end
   
-  get 
+  get '/'do 
   end
 
 end
